@@ -2,8 +2,9 @@
     margin: 0;
 }
 
-h2 {
+p {
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 body {
@@ -11,8 +12,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     height: 100vh;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#score-x, #score-o {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 40px;
+    width: 160px;
+    background-color: #333;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+#wins-x, #wins-o {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fff;
 }
 
 #board {
